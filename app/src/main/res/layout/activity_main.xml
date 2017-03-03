@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg">
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:max="3"
+        android:progress="0"
+        android:layout_x="209dp"
+        android:layout_y="296dp"
+        android:id="@+id/seekBar" />
+
+    <TextView
+        android:text="Velocidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="237dp"
+        android:layout_y="319dp"
+        android:id="@+id/textView"
+        android:textColor="@android:color/holo_orange_light"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_width="71dp"
+        android:layout_height="29dp"
+        android:layout_x="333dp"
+        android:layout_y="187dp"
+        android:id="@+id/bhorn"
+        android:background="@drawable/claxon"
+        android:onClick="tocaBocina" />
+
+    <Button
+        android:layout_width="76dp"
+        android:layout_height="78dp"
+        android:layout_x="202dp"
+        android:layout_y="165dp"
+        android:id="@+id/bsensor"
+        android:background="@drawable/aceleoff"
+        android:onClick="pulsarSensor" />
+
+</AbsoluteLayout>
